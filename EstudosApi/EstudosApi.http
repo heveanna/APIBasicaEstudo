@@ -1,0 +1,30 @@
+@EstudosApi_HostAddress = http://localhost:5007
+
+### Cadastrar um produto
+
+POST {{EstudosApi_HostAddress}}/api/produtos
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nome": "Teclado",
+  "preco": 150.00,
+  "quantidadeEstoque": 10
+}
+
+### Cadastrar outro produto
+
+POST {{EstudosApi_HostAddress}}/api/produtos
+Content-Type: application/json
+
+{
+  "id": 2,
+  "nome": "Mouse",
+  "preco": 80.00,
+  "quantidadeEstoque": 20
+}
+
+### Consultar todos os produtos
+
+GET {{EstudosApi_HostAddress}}/api/produtos
+Accept: application/json
